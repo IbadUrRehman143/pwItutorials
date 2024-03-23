@@ -15,35 +15,45 @@
         <title>Directory Landing Page</title>
 
         <!-- For favicon png -->
-		<link rel="shortcut icon" type="image/icon" href="/static/assets/logo/favicon.png"/>
+		{%  load static %}
+		<link rel="shortcut icon" type="image/icon" href={% static "logo/favicon.png" %}>
        
         <!--font-awesome.min.css-->
-        <link rel="stylesheet" href={% static "assets/css/font-awesome.min.css" %}>
+		{%  load static %}
+        <link rel="stylesheet" href={% static "/css/font-awesome.min.css" %}>
 
         <!--linear icon css-->
-		<link rel="stylesheet" href="/static/assets/css/linearicons.css">
+		{%  load static %}
+		<link rel="stylesheet" href={% static "css/linearicons.css" %}>
 
 		<!--animate.css-->
-        <link rel="stylesheet" href="/static/assets/css/animate.css">
+		{%  load static %}
+        <link rel="stylesheet" href={% static "css/animate.css" %}>
 
 		<!--flaticon.css-->
-        <link rel="stylesheet" href="/static/assets/css/flaticon.css">
+		{%  load static %}
+        <link rel="stylesheet" href={% static "css/flaticon.css" %}>
 
 		<!--slick.css-->
-        <link rel="stylesheet" href="/static/assets/css/slick.css">
-		<link rel="stylesheet" href="/static/assets/css/slick-theme.css">
+		{%  load static %}
+        <link rel="stylesheet" href={% static "css/slick.css" %}>
+		<link rel="stylesheet" href={% static "css/slick-theme.css" %}>
 		
         <!--bootstrap.min.css-->
-        <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+		{%  load static %}
+        <link rel="stylesheet" href={% static "css/bootstrap.min.css" %}>
 		
 		<!-- bootsnav -->
-		<link rel="stylesheet" href="/static/assets/css/bootsnav.css" >	
+		{%  load static %}
+		<link rel="stylesheet" href={% static "css/bootsnav.css" %} >	
         
         <!--style.css-->
-        <link rel="stylesheet" href="/static/assets/css/style.css">
+		{%  load static %}
+        <link rel="stylesheet" href={% static "css/style.css" %}>
         
         <!--responsive.css-->
-        <link rel="stylesheet" href="/static/assets/css/responsive.css">
+		{%  load static %}
+        <link rel="stylesheet" href={% static "css/responsive.css" %}>
         
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -1108,32 +1118,39 @@
 		<!--footer end-->
 		
 		<!-- Include all js compiled plugins (below), or include individual files as needed -->
-
-		<script src="assets/js/jquery.js"></script>
+        {% load static %}
+		<script src= {% static "js/jquery.js" %}></script>
         
         <!--modernizr.min.js-->
+		{% load static %}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 		
 		<!--bootstrap.min.js-->
-        <script src="assets/js/bootstrap.min.js"></script>
+		{% load static %}
+        <script src= {% static "js/bootstrap.min.js %}></script>
 		
 		<!-- bootsnav js -->
-		<script src="assets/js/bootsnav.js"></script>
+		{% load static %}
+		<script src= {% static "js/bootsnav.js" %}></script>
 
         <!--feather.min.js-->
-        <script  src="assets/js/feather.min.js"></script>
+		{% load static %}
+        <script  src= {% static "js/feather.min.js %}></script>
 
         <!-- counter js -->
-		<script src="assets/js/jquery.counterup.min.js"></script>
-		<script src="assets/js/waypoints.min.js"></script>
+		{% load static %}
+		<script src= {% static "js/jquery.counterup.min.js" %}></script>
+		<script src= {% static "js/waypoints{% static . %}></script>
 
         <!--slick.min.js-->
-        <script src="assets/js/slick.min.js"></script>
+		{% load static %}
+        <script src={% static "js/slick.min.js" %} ></script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 		     
         <!--Custom JS-->
-        <script src="assets/js/custom.js"></script>
+		{% load static %}
+        <script src={% static "js/custom.js" %}></script>
         
     </body>
 	
